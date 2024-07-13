@@ -5,23 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anuncios de AdMob</title>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <script>
-        function mostrarAnuncio() {
-            const adsContainer = document.getElementById("ads-container");
-            const ad = document.createElement("ins");
-            ad.className = "adsbygoogle";
-            ad.style.display = "block";
-            ad.style.textAlign = "center";
-            ad.setAttribute("data-ad-client", "ca-pub-3940256099942544"); // ID de cliente de prueba
-            ad.setAttribute("data-ad-slot", "9882256479"); // ID de unidad de anuncio de prueba
-            ad.setAttribute("data-ad-format", "auto");
-            adsContainer.appendChild(ad);
-            (adsbygoogle = window.adsbygoogle || []).push({});
-        }
-        document.addEventListener("DOMContentLoaded", mostrarAnuncio);
-    </script>
 </head>
 <body>
-    <div id="ads-container"></div>
+    <div id="ads-container" style="text-align: center;">
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-3940256099942544"  <!-- ID de cliente de prueba -->
+             data-ad-slot="9882256479"                 <!-- ID de unidad de anuncio de prueba -->
+             data-ad-format="auto"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
 </body>
 </html>
