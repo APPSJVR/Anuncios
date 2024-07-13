@@ -6,15 +6,14 @@
     <title>Anuncios de AdMob</title>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script>
-        const adUnitID = "ca-pub-2242622128999240/6882396406";
         function mostrarAnuncio() {
             const adsContainer = document.getElementById("ads-container");
             const ad = document.createElement("ins");
             ad.className = "adsbygoogle";
             ad.style.display = "block";
             ad.style.textAlign = "center";
-            ad.setAttribute("data-ad-client", "ca-pub-2242622128999240");
-            ad.setAttribute("data-ad-slot", adUnitID);
+            ad.setAttribute("data-ad-client", "ca-pub-3940256099942544"); // ID de cliente de prueba
+            ad.setAttribute("data-ad-slot", "9882256479"); // ID de unidad de anuncio de prueba
             ad.setAttribute("data-ad-format", "auto");
             adsContainer.appendChild(ad);
             (adsbygoogle = window.adsbygoogle || []).push({});
